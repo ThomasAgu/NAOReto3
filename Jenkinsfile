@@ -10,7 +10,7 @@ pipeline {
         
         stage('Linting') {
             when {
-                expression { env.BRANCH_NAME == 'master' }
+                expression { env.BRANCH_NAME == 'main' }
             }
             
             steps {
@@ -24,10 +24,7 @@ pipeline {
                 branch 'master'
             }
             
-            steps {
-                
-                // Agrega aquí tus pasos de construcción
-            }
+            
         }
         
         stage('Test') {
@@ -35,9 +32,7 @@ pipeline {
                 branch 'master'
             }
             
-            steps {
-                // Agrega aquí tus pasos de prueba
-            }
+         
         }
         
         stage('Deploy') {
@@ -45,9 +40,7 @@ pipeline {
                 branch 'master'
             }
             
-            steps {
-                // Agrega aquí tus pasos de despliegue
-            }
+            
         }
     }
 }
