@@ -19,12 +19,15 @@ pipeline {
             }
         }
         
-        stage('Build') {
+       /*  stage('Build') {
             when {
                 branch 'master'
             }
             
-            
+            steps {
+                
+                // Agrega aquí tus pasos de construcción
+            }
         }
         
         stage('Test') {
@@ -32,7 +35,9 @@ pipeline {
                 branch 'master'
             }
             
-         
+            steps {
+                // Agrega aquí tus pasos de prueba
+            }
         }
         
         stage('Deploy') {
@@ -40,7 +45,9 @@ pipeline {
                 branch 'master'
             }
             
-            
-        }
+            steps {
+                // Agrega aquí tus pasos de despliegue
+            }
+        } */
     }
 }
