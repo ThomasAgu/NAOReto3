@@ -1,4 +1,4 @@
-component: express
+lcomponent: express
 name: api
 
 inputs:
